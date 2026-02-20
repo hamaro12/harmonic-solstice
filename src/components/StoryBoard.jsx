@@ -71,7 +71,7 @@ export default function StoryBoard({ isActive, storagePrefix, onUpdateMeta }) {
     if (savedKey) setUserApiKey(savedKey);
 
     const savedModel = localStorage.getItem('webnovel_gemini_model');
-    const validModels = ['gemini-3-flash-preview', 'gemini-3-pro-preview'];
+    const validModels = ['gemini-3-flash-preview', 'gemini-3-pro-preview', 'gemini-3.1-pro-preview'];
 
     if (savedModel && validModels.includes(savedModel)) {
       setAiModel(savedModel);
@@ -1327,6 +1327,7 @@ export default function StoryBoard({ isActive, storagePrefix, onUpdateMeta }) {
                 >
                   <option value="gemini-3-flash-preview">Gemini 3 Flash Preview (빠름, 추천)</option>
                   <option value="gemini-3-pro-preview">Gemini 3 Pro Preview (고성능)</option>
+                  <option value="gemini-3.1-pro-preview">Gemini 3.1 Pro Preview</option>
                 </select>
               </div>
 
@@ -1713,6 +1714,7 @@ export default function StoryBoard({ isActive, storagePrefix, onUpdateMeta }) {
               >
                 <option value="gemini-3-flash-preview">Gemini 3 Flash Preview (빠름, 추천)</option>
                 <option value="gemini-3-pro-preview">Gemini 3 Pro Preview (고성능)</option>
+                <option value="gemini-3.1-pro-preview">Gemini 3.1 Pro Preview</option>
               </select>
             </div>
 
